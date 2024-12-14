@@ -1,0 +1,126 @@
+/* إعدادات أساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f8f5;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* تصميم الهيدر */
+header {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4caf50;
+    animation: bounce 2s infinite;
+}
+
+.date-school {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* تصميم المحتوى */
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #4caf50;
+}
+
+.output {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* تصميم الأزرار */
+.btn {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+}
+
+/* حركات ممتعة */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.output {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
